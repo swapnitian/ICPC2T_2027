@@ -44,7 +44,8 @@ export const publicityChairs = [
   { name: "Dr. Jitendra Kumar", role: "NIT Jamshedpur" },
   { name: "Dr. Gauri Shankar", role: "IIT(ISM) Dhanbad" },
   { name: "Dr. Ashish Singhal", role: "SGI Bhopal" },
-  { name: "Dr. Dipanshu Naware", role: "NIT Trichy" }
+  { name: "Dr. Dipanshu Naware", role: "NIT Trichy" },
+  { name: "Dr. Srikant Misra", role: "GIET University, Gunupur" }
 ];
 
 export const financeChairs = [
@@ -75,7 +76,9 @@ export const internationalAdvisory = [
   { name: "Prof. Vinod Khadkikar", role: "Khalifa University of Science & Technology, UAE" },
   { name: "Prof. Kashem Muttaqi", role: "University of Wollongong, Australia" },
   { name: "Prof. Biplab Sikdar", role: "National University of Singapore" },
-  { name: "Dr. Brij N. Singh", role: "John Deere Inc, USA" }
+  { name: "Dr. Brij N. Singh", role: "John Deere Inc, USA" },
+  { name: "Prof. Koichi Takaki", role: "Iwate University, Japan" },
+  { name: "Prof. Tadashi Suetsugu", role: "Fukuoka University, Japan" }
 ];
 
 export const nationalAdvisory = [

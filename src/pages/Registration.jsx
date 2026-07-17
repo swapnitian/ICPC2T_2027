@@ -9,8 +9,8 @@ const fadeUp = {
 
 const feeData = [
   { category: 'Student / Research Scholar', ieeeINR: '₹8,000', ieeeUSD: '$250', nonIeeeINR: '₹9,000', nonIeeeUSD: '$300' },
-  { category: 'Academician',                 ieeeINR: '₹8,000', ieeeUSD: '$250', nonIeeeINR: '₹9,000', nonIeeeUSD: '$300' },
-  { category: 'Industry Professional',       ieeeINR: '₹11,000', ieeeUSD: '$350', nonIeeeINR: '₹10,000', nonIeeeUSD: '$400' },
+  { category: 'Academician',                 ieeeINR: '₹9,000', ieeeUSD: '$250', nonIeeeINR: '₹10,000', nonIeeeUSD: '$300' },
+  { category: 'Industry Professional',       ieeeINR: '₹10,000', ieeeUSD: '$350', nonIeeeINR: '₹11,000', nonIeeeUSD: '$400' },
 ];
 
 const bankDetails = [
