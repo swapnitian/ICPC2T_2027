@@ -12,6 +12,8 @@ import SS6Pdf from "../assets/SpecialSession/SS pdf/SS6.pdf";
 import SS7Pdf from "../assets/SpecialSession/SS pdf/SS7.pdf";
 import SS8Pdf from "../assets/SpecialSession/SS pdf/SS8.pdf";
 import SS9Pdf from "../assets/SpecialSession/SS pdf/SS9.pdf";
+import SS10Pdf from "../assets/SpecialSession/SS pdf/SS10.pdf";
+import SS11Pdf from "../assets/SpecialSession/SS pdf/SS11.pdf";
 
 // Import Chairs Images
 import yogeshImg from '../assets/SpecialSession/Organizing chairs images/Dr. Yogesh Kumar K, Alliance University, Bengaluru.png';
@@ -44,6 +46,15 @@ import DeepakImg from "../assets/SpecialSession/Organizing chairs images/Dr. Dee
 import SaurabhImg from "../assets/SpecialSession/Organizing chairs images/Dr. Saurabh Kesherwani, EEGRID ANALYTICS Pvt. Ltd.png";
 import SuhailImg from "../assets/SpecialSession/Organizing chairs images/Dr. M. Suhail Shaikh, Hanshan Normal University China.png";
 import ShakeImg from "../assets/SpecialSession/Organizing chairs images/Dr. Shake Ibna Abir, Florida Gulf Coast University, FL, USA.png";
+import AshrafImg from "../assets/SpecialSession/Organizing chairs images/Dr. Mohd Ashraf Bin Ahmad, Universiti Malaysia Pahang Al-Sultan Abdullah, Pekan 26600, Pahang, Malaysia.png";
+import SonaliImg from "../assets/SpecialSession/Organizing chairs images/Dr. Sonali Paunikar, Sarvepalli Radhakrishnan University, Bhopal.png";
+import NPPatidarImg from "../assets/SpecialSession/Organizing chairs images/Dr. N. P. Patidar, MANIT, Bhopal.png";
+import MLKolheImg from "../assets/SpecialSession/Organizing chairs images/Dr. M. L. Kolhe, University of Agder, Norway.png";
+import BalakrushnaImg from "../assets/SpecialSession/Organizing chairs images/Dr. Balakrushna Sahu, Hitachi Energy, IDC, Chennai.png";
+import PritamImg from "../assets/SpecialSession/Organizing chairs images/Dr. Pritam Kumar Nirala, NIT Jamshedpur.png";
+import KundanImg from "../assets/SpecialSession/Organizing chairs images/Dr. Kundan Kumar, NIT Jamshedpur.png";
+import RaviShankarImg from "../assets/SpecialSession/Organizing chairs images/Dr. Ravi Shankar, NIT Patna.png";
+import RammohanImg from "../assets/SpecialSession/Organizing chairs images/Dr. Rammohan Mallipeddi, KNU South Korea.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -290,15 +301,77 @@ const specialSessionsData = [
       photoUrl: SuhailImg,
     },
     {
-      name: "Dr. Wulfran Fendzi Mbasso",
-      designation: "Applied Science Private University, Jordan",
-      photoUrl: WulfranImg,
+      name: "Dr. Mohd Ashraf Bin Ahmad",
+      designation: "Universiti Malaysia Pahang Al-Sultan Abdullah, Pekan 26600, Pahang, Malaysia",
+      photoUrl: AshrafImg,
     },
     {
       name: "Dr. Shake Ibna Abir",
       designation: "Florida Gulf Coast University, FL, USA",
       photoUrl: ShakeImg,
     }
+  ],
+},
+
+  //SS10 -->
+  {
+  id: 10,
+  title: "Special Session 10:  Synergising the Hydrogen Transition, Electric Mobility, and Power Grid Resiliency for Global Sustainability",
+  pdfUrl: SS10Pdf,
+  instructions:
+    'After login, select Special Session (SS10): “Synergising the Hydrogen Transition, Electric Mobility, and Power Grid Resiliency for Global Sustainability”',
+  chairs: [
+    {
+      name: "Dr. Sonali Paunikar",
+      designation: "Sarvepalli Radhakrishnan University, Bhopal",
+      photoUrl: SonaliImg,
+    },
+    {
+      name: "Dr. N. P. Patidar",
+      designation: "MANIT, Bhopal",
+      photoUrl: NPPatidarImg,
+    },
+    {
+      name: "Dr. M. L. Kolhe",
+      designation: "University of Agder, Norway",
+      photoUrl: MLKolheImg,
+    },
+    {
+      name: "Dr. Balakrushna Sahu",
+      designation: "Hitachi Energy, IDC, Chennai",
+      photoUrl: BalakrushnaImg,
+    },
+  ],
+},
+
+  //SS11 -->
+  {
+  id: 11,
+  title: "Special Session 11: Advanced Control, Stability Analysis and Intelligent Techniques for GridIntegrated Renewable Energy Systems",
+  pdfUrl: SS11Pdf,
+  instructions:
+    'After login, select Special Session (SS-11): “Advanced Control, Stability Analysis and Intelligent Techniques for Grid-Integrated Renewable Energy Systems”',
+  chairs: [
+    {
+      name: "Dr. Pritam Kumar Nirala",
+      designation: "NIT Jamshedpur",
+      photoUrl: PritamImg,
+    },
+    {
+      name: "Dr. Kundan Kumar",
+      designation: "NIT Jamshedpur",
+      photoUrl: KundanImg,
+    },
+    {
+      name: "Dr. Ravi Shankar",
+      designation: "NIT Patna",
+      photoUrl: RaviShankarImg,
+    },
+    {
+      name: "Dr. Rammohan Mallipeddi",
+      designation: "KNU South Korea",
+      photoUrl: RammohanImg,
+    },
   ],
 }
 ];
