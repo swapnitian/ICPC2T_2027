@@ -18,6 +18,7 @@ const navItems = [
       { label: 'Conference Tracks', to: '/tracks' },
       { label: 'Paper Submission', to: '/submission' },
       { label: 'Call for Special Session', to: '/special-session' },
+      { label: 'Camera Ready Paper Submission', to: '/Camera Ready Paper Submission.pdf', isExternal: true },
     ]
   },
   { label: 'Special Sessions', to: '/special-sessions' },
@@ -42,17 +43,30 @@ function DropdownMenu({ items, isOpen, close }) {
           className="absolute top-full left-0 mt-1.5 w-52 bg-white rounded-xl shadow-xl border border-gray-100/80 overflow-hidden z-50 py-1"
         >
           {items.map((item) => (
-            <NavLink
-              key={item.to}
-              to={item.to}
-              onClick={close}
-              className={({ isActive }) =>
-                `block px-4 py-2.5 text-xs xl:text-sm font-medium transition-colors hover:bg-blue-50/80 hover:text-blue-700 ${isActive ? 'text-blue-700 bg-blue-50 font-semibold' : 'text-gray-700'
-                }`
-              }
-            >
-              {item.label}
-            </NavLink>
+            item.isExternal ? (
+              <a
+                key={item.to}
+                href={item.to}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={close}
+                className="block px-4 py-2.5 text-xs xl:text-sm font-medium transition-colors hover:bg-blue-50/80 hover:text-blue-700 text-gray-700"
+              >
+                {item.label}
+              </a>
+            ) : (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                onClick={close}
+                className={({ isActive }) =>
+                  `block px-4 py-2.5 text-xs xl:text-sm font-medium transition-colors hover:bg-blue-50/80 hover:text-blue-700 ${isActive ? 'text-blue-700 bg-blue-50 font-semibold' : 'text-gray-700'
+                  }`
+                }
+              >
+                {item.label}
+              </NavLink>
+            )
           ))}
         </motion.div>
       )}
@@ -184,16 +198,29 @@ export default function Navbar() {
                           className="overflow-hidden pl-4 mt-1 space-y-1"
                         >
                           {item.children.map((child) => (
-                            <NavLink
-                              key={child.to}
-                              to={child.to}
-                              onClick={() => setMobileOpen(false)}
-                              className={({ isActive }) =>
-                                `block px-3 py-2 text-sm rounded-lg ${isActive ? 'text-blue-700 bg-blue-50 font-semibold' : 'text-gray-600 hover:text-blue-700 hover:bg-blue-50'}`
-                              }
-                            >
-                              {child.label}
-                            </NavLink>
+                            child.isExternal ? (
+                              <a
+                                key={child.to}
+                                href={child.to}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => setMobileOpen(false)}
+                                className="block px-3 py-2 text-sm rounded-lg text-gray-600 hover:text-blue-700 hover:bg-blue-50"
+                              >
+                                {child.label}
+                              </a>
+                            ) : (
+                              <NavLink
+                                key={child.to}
+                                to={child.to}
+                                onClick={() => setMobileOpen(false)}
+                                className={({ isActive }) =>
+                                  `block px-3 py-2 text-sm rounded-lg ${isActive ? 'text-blue-700 bg-blue-50 font-semibold' : 'text-gray-600 hover:text-blue-700 hover:bg-blue-50'}`
+                                }
+                              >
+                                {child.label}
+                              </NavLink>
+                            )
                           ))}
                         </motion.div>
                       )}
