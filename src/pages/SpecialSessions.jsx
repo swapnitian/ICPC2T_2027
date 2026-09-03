@@ -305,11 +305,11 @@ const specialSessionsData = [
       designation: "Universiti Malaysia Pahang Al-Sultan Abdullah, Pekan 26600, Pahang, Malaysia",
       photoUrl: AshrafImg,
     },
-    {
-      name: "Dr. Shake Ibna Abir",
-      designation: "Florida Gulf Coast University, FL, USA",
-      photoUrl: ShakeImg,
-    }
+    // {
+    //   name: "Dr. Shake Ibna Abir",
+    //   designation: "Florida Gulf Coast University, FL, USA",
+    //   photoUrl: ShakeImg,
+    // }
   ],
 },
 
